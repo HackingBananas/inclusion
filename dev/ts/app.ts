@@ -1,1 +1,1 @@
-// app.ts
+///<reference path='main_functions.ts' />
