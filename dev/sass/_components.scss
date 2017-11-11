@@ -73,4 +73,9 @@ input[type=text], input[type=number]{
 	border: 0px solid #fff;
 	border-bottom: 3px solid #333;
 	text-align: right;
+	height: 2.5rem;
+	outline: none;
+	&:active{
+		box-shadow: 2px 0px 0px #fafafa;
+	}
 }
