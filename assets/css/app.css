@@ -5,6 +5,9 @@
   margin: 0px;
   font-family: 'Roboto', sans-serif; }
 
+#header {
+  background-color: #fff; }
+
 #content {
   padding-top: 4.5rem; }
 
@@ -69,7 +72,7 @@
   top: 1rem;
   background-size: cover; }
 
-button.action-button {
+.action-button {
   width: 100%;
   min-height: 4rem;
   border-radius: 3px;
@@ -81,7 +84,7 @@ button.action-button {
   transition: all .3s;
   font-size: 1.4rem;
   font-weight: 300; }
-  button.action-button:hover {
+  .action-button:hover {
     background-color: #FAFAFA;
     cursor: pointer; }
 
