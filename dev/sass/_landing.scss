@@ -1,14 +1,20 @@
-.background-map{
+.background-image{
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
+	background-image: url('/assets/images/pantalon.png');
 }
 .holder{
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(#333, 0.7);
+	opacity: .8;
+	background: rgb(111,207,151);
+	background: -moz-linear-gradient(45deg, rgba(111,207,151,1) 0%, rgba(187,107,217,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(111,207,151,1) 0%,rgba(187,107,217,1) 100%);
+	background: linear-gradient(45deg, rgba(111,207,151,1) 0%,rgba(187,107,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fcf97', endColorstr='#bb6bd9',GradientType=1 );
 	z-index: 0;
 }
 
