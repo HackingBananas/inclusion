@@ -25,6 +25,11 @@ $tablet: 860px;
 	padding-top: 5.5rem;
 }
 
+.profile {
+	width: 70%;
+	align-items: center;
+}
+
 @import "landing";
 @import "forms"; 
 @import "components";
@@ -54,3 +59,8 @@ $tablet: 860px;
 		width: 100%;
 	}
 }
+
+body{
+	margin: 0;
+	overflow: hidden;
+  }
