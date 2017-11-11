@@ -20,7 +20,7 @@ var landing = function () {
 var load_business_form = function () {
     var checked = document.getElementById("empresa").checked;
     if (checked) {
-        load("business.html", "#business");
+        load("search/business.html", "#business");
     }
     else {
         $("#business").html("");
