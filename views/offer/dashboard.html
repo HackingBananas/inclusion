@@ -1,5 +1,53 @@
 <div id="userDashboard">
-    <div id="userGraphics">
-        
+    <div class="graph half">
+        <canvas id="grafica1"></canvas>
     </div>
+    <div class="graph half">
+        <canvas id="grafica2"></canvas>
+    </div>
+    <script>
+    	new Chart(document.getElementById("grafica1"), {
+		    type: 'doughnut',
+		    data: {
+		      labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
+		      datasets: [
+		        {
+		          label: "Population (millions)",
+		          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+		          data: [30,12,28,16,14]
+		        }
+		      ]
+		    },
+		    options: {
+		      title: {
+		        display: true,
+		        text: 'Most programming required skills for your zone'
+		      }
+		    }
+		});
+
+		new Chart(document.getElementById("grafica2"), {
+		    type: 'bar',
+		    data: {
+		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
+		      datasets: [
+		        {
+		          label: "Skill Perception",
+		          backgroundColor: "#3e95cd",
+		          data: [80,90,70,40]
+		        }, {
+		          label: "Acquired Skills",
+		          backgroundColor: "#8e5ea2",
+		          data: [68,29,50,80]
+		        }
+		      ]
+		    },
+		    options: {
+		      title: {
+		        display: true,
+		        text: 'Population growth (millions)'
+		      }
+		    }
+		});
+    </script>
 </div>
