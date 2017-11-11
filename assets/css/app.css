@@ -6,7 +6,12 @@
   font-family: 'Roboto', sans-serif; }
 
 #header {
-  background-color: #fff; }
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 5rem;
+  top: 0px;
+  left: 0px; }
 
 #content {
   padding-top: 4.5rem; }
@@ -56,20 +61,20 @@
   margin-top: 2rem; }
 
 .logo {
-  margin-top: .5rem;
-  margin-left: .5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: .5rem;
   width: 4rem;
-  display: inline-block;
-  position: fixed; }
+  display: inline-block; }
 
 .hamburger {
   background-image: url("/assets/images/hamburger.png");
   width: 2rem;
   height: 1.5rem;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   right: 2.5rem;
-  top: 1rem;
+  top: 2.5rem;
   background-size: cover; }
 
 .action-button {
