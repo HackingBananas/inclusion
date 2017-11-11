@@ -12,6 +12,11 @@ $tablet: 860px;
 	font-family: 'Roboto', sans-serif;
 }
 
+#content{
+	padding-top: 4.5rem;
+}
+
 @import "landing";
 @import "forms"; 
 @import "components";
+@import "images";

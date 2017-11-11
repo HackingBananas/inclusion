@@ -1,3 +1,22 @@
+.logo{
+	margin-top: .5rem;
+	margin-left: .5rem;
+	width: 4rem;
+	display: inline-block;
+	position: fixed;
+}
+
+.hamburger{
+	background-image: url('/assets/images/hamburger.png');
+	width: 2rem;
+	height: 1.5rem;
+	display: inline-block;
+	position: fixed;
+	right: 2.5rem;
+	top: 1rem;
+	background-size: cover;
+}
+
 button.action-button{
 	width: 100%;
 	min-height: 4rem;
@@ -39,7 +58,7 @@ button.action-button{
 	}
 }
 
-label, input[type=text], input[type=number], .signup-map{
+label, input[type=text], input[type=number], .signup-map, .full{
 	width: 90%;
 	margin-left: 5%;
 	font-size: 1.3rem;
