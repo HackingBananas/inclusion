@@ -107,7 +107,7 @@ button.action-button {
       display: block;
       width: 100%; } }
 
-label, input[type=text], input[type=number], .signup-map, .full {
+label, input[type=text], input[type=number], input[type=date], .signup-map, .full {
   width: 90%;
   margin-left: 5%;
   font-size: 1.3rem; }
@@ -117,13 +117,13 @@ label {
   color: #333;
   margin-top: .5rem; }
 
-input[type=text], input[type=number] {
+input[type=text], input[type=number], input[type=date] {
   border: 0px solid #fff;
   border-bottom: 3px solid #333;
   text-align: right;
   height: 2.5rem;
   outline: none; }
-  input[type=text]:active, input[type=number]:active {
+  input[type=text]:active, input[type=number]:active, input[type=date]:active {
     box-shadow: 2px 0px 0px #fafafa; }
 
 .icons {
