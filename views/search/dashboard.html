@@ -1,0 +1,55 @@
+<div>
+    <div class="graph half">
+        <canvas id="grafica1"></canvas>
+    </div>
+    <div class="graph half">
+        <canvas id="grafica2"></canvas>
+    </div>
+    <script>
+
+		new Chart(document.getElementById("grafica1"), {
+		    type: 'horizontalBar',
+		    data: {
+		      labels: ["Fortran77", "Cobol", "Java", "DevOps", "DBA"],
+		      datasets: [
+		        {
+		          label: "Number of people",
+		          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+		          data: [15,18,60,20,12]
+		        }
+		      ]
+		    },
+		    options: {
+		      legend: { display: false },
+		      title: {
+		        display: true,
+		        text: 'Skill matches within 10km'
+		      }
+		    }
+		});
+
+		new Chart(document.getElementById("grafica2"), {
+		    type: 'bar',
+		    data: {
+		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
+		      datasets: [
+		        {
+		          label: "Skill Perception",
+		          backgroundColor: "#3e95cd",
+		          data: [80,90,70,40]
+		        }, {
+		          label: "Acquired Skills",
+		          backgroundColor: "#8e5ea2",
+		          data: [68,29,50,80]
+		        }
+		      ]
+		    },
+		    options: {
+		      title: {
+		        display: true,
+		        text: 'Population growth (millions)'
+		      }
+		    }
+		});
+    </script>
+</div>

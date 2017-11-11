@@ -6,48 +6,189 @@
         <canvas id="grafica2"></canvas>
     </div>
     <script>
-    	new Chart(document.getElementById("grafica1"), {
-		    type: 'doughnut',
-		    data: {
-		      labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
-		      datasets: [
-		        {
-		          label: "Population (millions)",
-		          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-		          data: [30,12,28,16,14]
-		        }
-		      ]
-		    },
-		    options: {
-		      title: {
-		        display: true,
-		        text: 'Most programming required skills for your zone'
-		      }
-		    }
-		});
+        new Chart(document.getElementById("grafica1"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
+                datasets: [{
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [30, 12, 28, 16, 14]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Most programming required skills for your zone'
+                }
+            }
+        });
 
-		new Chart(document.getElementById("grafica2"), {
-		    type: 'bar',
-		    data: {
-		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
-		      datasets: [
-		        {
-		          label: "Skill Perception",
-		          backgroundColor: "#3e95cd",
-		          data: [80,90,70,40]
-		        }, {
-		          label: "Acquired Skills",
-		          backgroundColor: "#8e5ea2",
-		          data: [68,29,50,80]
-		        }
-		      ]
-		    },
-		    options: {
-		      title: {
-		        display: true,
-		        text: 'Population growth (millions)'
-		      }
-		    }
-		});
+        new Chart(document.getElementById("grafica2"), {
+            type: 'bar',
+            data: {
+                labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
+                datasets: [{
+                    label: "Skill Perception",
+                    backgroundColor: "#3e95cd",
+                    data: [80, 90, 70, 40]
+                }, {
+                    label: "Acquired Skills",
+                    backgroundColor: "#8e5ea2",
+                    data: [68, 29, 50, 80]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Population growth (millions)'
+                }
+            }
+        });
     </script>
-</div>
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <div>
+        <div class="responsive">
+            <div id="card">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                <div>
+                    Me
+                    <br> ECMAScript 6
+                    <br> -Javascript
+                    <br> -BabelJs
+                    <br> -JQuery
+                </div>
+            </div>
+            <div id="card">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                <div>
+                    Me
+                    <br> Back-end
+                    <br> -Node.js
+                    <br> -PHP
+                    <br> -Servlets
+                </div>
+            </div>
+            <div id="card">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                <div>
+                    Me
+                    <br> Database
+                    <br> -SQL
+                    <br> -NoSQL
+                </div>
+            </div>
+            <div id="card">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                <div>
+                    Me
+                    <br> IA
+                    <br> -Machine Learning
+                    <br> -Deep Learning
+                </div>
+            </div>
+        </div>
+        <!-- Aquí van las putas bolas BB :3 -->
+        <script>
+            $('.responsive').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        </script>
+        <div>
+            <div class="responsive">
+                <div id="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Front-end 83% 2.1 KM
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Back-end 23% 1.6 KM
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Database Admin 51% 5.4 KM
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> DevOps 79% 10.4 KM
+                    </div>
+                </div>
+            </div>
+        </div>
