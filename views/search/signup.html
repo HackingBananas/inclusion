@@ -1,15 +1,21 @@
-<div>    
-    <form>
+<div class="form-container">    
         <label for="nameUser">Name</label>
-        <input type="text" id="nameUser">
+        <input type="text" id="nameUser"> <br><br>
         <label for="nameUser">Age</label>
-        <input type="ageUser" id="ageUser">
+        <input type="number" id="ageUser"> <br><br>
+        <label for="Location">Location</label> <br><br>
         <input type="text" id="Location" value="Paseo de los Tamarindos 90, Bosques de las Lomas">
         <iframe class="signup-map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDjyBl1yDS6cC_nBxspSHZ01vek5VDKpG0
           &q=Paseo+de+Los+Tamarindos+90,+Bosques+de+las+Lomas">
         </iframe>
-        <input type="radio" name="tipo">Persona
-        <input type="radio" name="tipo">Empresa
-        <input type="button" value="Send">
-    </form>
+        <br><br>
+        <div class="full">
+            <input type="radio" name="tipo" id="persona"><label for="persona">Persona</label>    
+        </div>
+        <div class="full">
+            <input type="radio" name="tipo" id="empresa" onclick="load_business_form()"><label for="empresa">Empresa</label> <br>
+        </div>
+        <div id="business"></div>
+        <br>
+        <button class="action-button">Listo</button>
 </div>

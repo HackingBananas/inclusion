@@ -5,12 +5,17 @@
   margin: 0px;
   font-family: 'Roboto', sans-serif; }
 
+#content {
+  padding-top: 4.5rem; }
+
 .background-image {
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: url("/assets/images/pantalon.png"); }
+  background-image: url("/assets/images/pantalon.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .holder {
   position: fixed;
@@ -44,6 +49,26 @@
     .button-holder {
       width: 90%; } }
 
+.form-container {
+  margin-top: 2rem; }
+
+.logo {
+  margin-top: .5rem;
+  margin-left: .5rem;
+  width: 4rem;
+  display: inline-block;
+  position: fixed; }
+
+.hamburger {
+  background-image: url("/assets/images/hamburger.png");
+  width: 2rem;
+  height: 1.5rem;
+  display: inline-block;
+  position: fixed;
+  right: 2.5rem;
+  top: 1rem;
+  background-size: cover; }
+
 button.action-button {
   width: 100%;
   min-height: 4rem;
@@ -68,5 +93,41 @@ button.action-button {
     .half {
       display: block;
       width: 100%; } }
+
+.third {
+  display: inline-block;
+  width: 32%;
+  height: auto; }
+  @media (max-width: 860px) {
+    .third {
+      display: block;
+      width: 48%; } }
+  @media (max-width: 460px) {
+    .third {
+      display: block;
+      width: 100%; } }
+
+label, input[type=text], input[type=number], input[type=date], .signup-map, .full {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1.3rem; }
+
+label {
+  font-weight: 300;
+  color: #333;
+  margin-top: .5rem; }
+
+input[type=text], input[type=number], input[type=date] {
+  border: 0px solid #fff;
+  border-bottom: 3px solid #333;
+  text-align: right;
+  height: 2.5rem;
+  outline: none; }
+  input[type=text]:active, input[type=number]:active, input[type=date]:active {
+    box-shadow: 2px 0px 0px #fafafa; }
+
+.icons {
+  width: 100px;
+  height: 100px; }
 
 /*# sourceMappingURL=app.css.map */

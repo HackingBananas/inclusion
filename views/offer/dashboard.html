@@ -6,25 +6,23 @@
         <canvas id="grafica2"></canvas>
     </div>
     <script>
-    	new Chart(document.getElementById("grafica1"), {
-		    type: 'doughnut',
-		    data: {
-		      labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
-		      datasets: [
-		        {
-		          label: "Population (millions)",
-		          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-		          data: [30,12,28,16,14]
-		        }
-		      ]
-		    },
-		    options: {
-		      title: {
-		        display: true,
-		        text: 'Most programming required skills for your zone'
-		      }
-		    }
-		});
+        new Chart(document.getElementById("grafica1"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
+                datasets: [{
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [30, 12, 28, 16, 14]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Most programming required skills for your zone'
+                }
+            }
+        });
 
 		new Chart(document.getElementById("grafica2"), {
 		    type: 'bar',
@@ -50,4 +48,103 @@
 		    }
 		});
     </script>
-</div>
+    <script>
+        $('.responsive').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <div>
+        <div class="responsive">
+            <div class="card">
+                <figure>
+                    <img src="http://twimgs.com/ddj/galleries/24/01_full.jpg" alt="curse" class="icons">
+                </figure>
+                <div>
+                    <br> ECMAScript 6
+                    <br> -Javascript
+                    <br> -BabelJs
+                    <br> -JQuery
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://ugc.kn3.net/i/origin/http://blog.siliconstraits.vn/wp-content/uploads/2015/05/Internship-hiring-03.png"
+                    alt="curse" class="icons">
+                <div>
+                    <br> Back-end
+                    <br> -Node.js
+                    <br> -PHP
+                    <br> -Servlets
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://secure.meetupstatic.com/photos/event/2/8/2/1/global_454750273.jpeg" alt="curse" class="icons">
+                <div>
+                    <br> Database
+                    <br> -SQL
+                    <br> -NoSQL
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/189789-200.png" alt="curse" class="icons">
+                <div>
+                    <br> AI
+                    <br> -Machine Learning
+                    <br> -Deep Learning
+                </div>
+            </div>
+        </div>
+        <!-- Aquí van las putas bolas BB :3 -->
+
+        <div>
+            <div class="responsive">
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Front-end 83% 2.1 KM
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Back-end 23% 1.6 KM
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> Database Admin 51% 5.4 KM
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="user photo">
+                    <div>
+                        Me
+                        <br> DevOps 79% 10.4 KM
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -3,7 +3,10 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	background-image: url('/assets/images/pantalon.png');
+	background-image: url('/assets/images/pantalon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+
 }
 .holder{
 	position: fixed;
