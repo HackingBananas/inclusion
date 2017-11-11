@@ -24,29 +24,27 @@
             }
         });
 
-		new Chart(document.getElementById("grafica2"), {
-		    type: 'bar',
-		    data: {
-		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
-		      datasets: [
-		        {
-		          label: "Skill Perception",
-		          backgroundColor: "#3e95cd",
-		          data: [80,90,70,40]
-		        }, {
-		          label: "Acquired Skills",
-		          backgroundColor: "#8e5ea2",
-		          data: [68,29,50,80]
-		        }
-		      ]
-		    },
-		    options: {
-		      title: {
-		        display: true,
-		        text: 'Perception vs Acquired Skills'
-		      }
-		    }
-		});
+        new Chart(document.getElementById("grafica2"), {
+            type: 'bar',
+            data: {
+                labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
+                datasets: [{
+                    label: "Skill Perception",
+                    backgroundColor: "#3e95cd",
+                    data: [80, 90, 70, 40]
+                }, {
+                    label: "Acquired Skills",
+                    backgroundColor: "#8e5ea2",
+                    data: [68, 29, 50, 80]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Perception vs Acquired Skills'
+                }
+            }
+        });
     </script>
     <script>
         $('.responsive').slick({
