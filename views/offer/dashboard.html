@@ -1,12 +1,12 @@
 <div id="userDashboard">
     <div class="graph half">
-        <canvas id="doughnut-chart"></canvas>
+        <canvas id="grafica1"></canvas>
     </div>
     <div class="graph half">
-        <canvas id="bar-chart-grouped"></canvas>
+        <canvas id="grafica2"></canvas>
     </div>
     <script>
-    	new Chart(document.getElementById("doughnut-chart"), {
+    	new Chart(document.getElementById("grafica1"), {
 		    type: 'doughnut',
 		    data: {
 		      labels: ["Java", "PHP", "DBA", "Cobol", "Fortran77"],
@@ -26,7 +26,7 @@
 		    }
 		});
 
-		new Chart(document.getElementById("bar-chart-grouped"), {
+		new Chart(document.getElementById("grafica2"), {
 		    type: 'bar',
 		    data: {
 		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
