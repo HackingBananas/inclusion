@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 $phone: 460px;
+$tablet: 860px;
 
 *{
 	box-sizing: border-box;
@@ -12,4 +13,5 @@ $phone: 460px;
 }
 
 @import "landing";
+@import "forms"; 
 @import "components";
