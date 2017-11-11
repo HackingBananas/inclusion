@@ -1,6 +1,6 @@
 // app.scss
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 $phone: 460px;
 $tablet: 860px;
@@ -20,3 +20,28 @@ $tablet: 860px;
 @import "forms"; 
 @import "components";
 @import "images";
+
+
+
+.half{
+	display: inline-block;
+	width: 46%;
+	height: auto;
+	@media(max-width: $phone){
+		display: block;
+		width: 100%;
+	}
+}
+.third{
+	display: inline-block;
+	width: 32%;
+	height: auto;
+	@media(max-width: $tablet){
+		display: block;
+		width: 48%;
+	}
+	@media(max-width: $phone){
+		display: block;
+		width: 100%;
+	}
+}

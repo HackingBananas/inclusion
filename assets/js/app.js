@@ -7,14 +7,14 @@ var load = function (path, target, callback) {
         }
         else {
             $("#header").css("display", "block");
-            $("#content").css("paddingTop", "0rem");
+            $("#content").css("paddingTop", "4.5rem");
         }
     });
 };
 var landing = function () {
     load("landing.html", "#content", function () {
         $("#header").css("display", "none");
-        $("#content").css("paddingTop", "4.5rem");
+        $("#content").css("paddingTop", "0rem");
     });
 };
 var load_business_form = function () {

@@ -5,7 +5,7 @@ var load = function(path, target = "#content", callback){
 			callback();
 		}else{
 			$("#header").css("display", "block");
-			$("#content").css("paddingTop", "0rem")
+			$("#content").css("paddingTop", "4.5rem")
 		}
 	})
 };
@@ -13,7 +13,7 @@ var load = function(path, target = "#content", callback){
 var landing = function(){
 	load("landing.html","#content", function(){
 		$("#header").css("display", "none");
-		$("#content").css("paddingTop", "4.5rem")
+		$("#content").css("paddingTop", "0rem")
 	});
 }
 
