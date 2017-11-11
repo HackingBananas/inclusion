@@ -22,7 +22,7 @@ $tablet: 860px;
 }
 
 #content{
-	padding-top: 4.5rem;
+	padding-top: 5.5rem;
 }
 
 @import "landing";
@@ -38,7 +38,7 @@ $tablet: 860px;
 	height: auto;
 	@media(max-width: $phone){
 		display: block;
-		width: 100%;
+		width: 96%;
 	}
 }
 .third{

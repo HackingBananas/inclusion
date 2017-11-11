@@ -66,3 +66,31 @@ input[type=text], input[type=number], input[type=date]{
 	margin-bottom: 2rem;
 }
 
+.card{
+	padding: 2rem;
+	margin: 5px;
+	box-shadow: 0px 0px 4px #E0E0E0;
+	border-radius: 5px;
+	position: relative;
+	.card-content, .icons{
+		display: inline-block;
+	}
+	.icons{
+		border-radius: 100%;
+		width: 100px;
+    	height: 100px;
+	}
+	.card-content{
+		position: absolute;
+		width: calc(100% - 150px);
+		maring-top: 50%;
+		transform: translateY(-50%);
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+	}
+	.card-distance{
+	    position: absolute;
+	    top: 1rem;
+	    right: 1rem;
+	}
+}

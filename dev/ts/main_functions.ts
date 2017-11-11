@@ -5,7 +5,7 @@ var load = function(path, target = "#content", callback){
 			callback();
 		}else{
 			$("#header").css("display", "block");
-			$("#content").css("paddingTop", "4.5rem")
+			$("#content").css("paddingTop", "5.5rem")
 		}
 	})
 };
