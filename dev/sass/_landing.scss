@@ -1,0 +1,35 @@
+.background-map{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+.holder{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(#333, 0.7);
+	z-index: 0;
+}
+
+.main-logo{
+	position: absolute;
+	width: 7rem;
+	height: 7rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	top: 3rem;
+}
+
+.button-holder{
+	position: fixed;
+	z-index: 1;
+	width: 60%;
+	bottom: 4rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	@media(max-width: $phone){
+		width: 90%;
+	}
+}

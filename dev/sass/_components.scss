@@ -1,0 +1,16 @@
+button.action-button{
+	width: 100%;
+	min-height: 4rem;
+	border-radius: 3px;
+	background-color: #F1C40F;
+	color: #fff;
+	outline: none;
+	margin-top: 1rem;
+	border: none;
+	transition: all .3s;
+	font-size: 1.4rem;
+	&:hover{
+		background-color: darken(#F1C40F, 10%);
+		cursor: pointer;
+	}
+}
