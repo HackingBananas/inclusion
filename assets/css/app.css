@@ -151,6 +151,10 @@ input[type=text], input[type=number], input[type=date] {
     top: 1rem;
     right: 1rem; }
 
+p {
+  text-align: center;
+  cursor: pointer; }
+
 .half {
   display: inline-block;
   width: 46%;
