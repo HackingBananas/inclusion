@@ -19,10 +19,18 @@ $tablet: 860px;
 	height: 5rem;
 	top: 0px;
 	left: 0px;
+	z-index: 99;
 }
 
 #content{
 	padding-top: 5.5rem;
+	overflow-y: scroll;
+    max-height: calc(100vh - .5rem);
+}
+
+.profile {
+	width: 70%;
+	align-items: center;
 }
 
 @import "landing";
@@ -54,3 +62,8 @@ $tablet: 860px;
 		width: 100%;
 	}
 }
+
+body{
+	margin: 0;
+	overflow: hidden;
+  }

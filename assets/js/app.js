@@ -1,7 +1,28 @@
-var load = function (path, target, callback) {
-    if (target === void 0) { target = "#content"; }
+var actor;
+var load = function (path, person, callback) {
+    if (person !== undefined)
+        actor = person;
     $.get(path).done(function (data) {
-        $(target).html(data);
+        $('#content').html(data);
+        if (actor == "search") {
+            $("#search-area").text("New Opportunity");
+        }
+        else {
+            $("#search-area").text("Mayor Habilities");
+        }
+        if (callback !== null && callback !== undefined) {
+            callback();
+        }
+        else {
+            $("#header").css("display", "block");
+            $("#content").css("paddingTop", "5.5rem");
+        }
+    });
+};
+var bubbles = function (callback) {
+    console.log(actor + "/dashboard.html");
+    $.get(actor + "/dashboard.html").done(function (data) {
+        $('#content').html(data);
         if (callback !== null && callback !== undefined) {
             callback();
         }

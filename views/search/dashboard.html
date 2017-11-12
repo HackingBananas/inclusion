@@ -6,50 +6,220 @@
         <canvas id="grafica2"></canvas>
     </div>
     <script>
+        new Chart(document.getElementById("grafica1"), {
+            type: 'horizontalBar',
+            data: {
+                labels: ["Fortran77", "Cobol", "Java", "DevOps", "DBA"],
+                datasets: [{
+                    label: "Number of people",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [15, 18, 60, 20, 12]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Skill matches within 10km'
+                }
+            }
+        });
 
-		new Chart(document.getElementById("grafica1"), {
-		    type: 'horizontalBar',
-		    data: {
-		      labels: ["Fortran77", "Cobol", "Java", "DevOps", "DBA"],
-		      datasets: [
-		        {
-		          label: "Number of people",
-		          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-		          data: [15,18,60,20,12]
-		        }
-		      ]
-		    },
-		    options: {
-		      legend: { display: false },
-		      title: {
-		        display: true,
-		        text: 'Skill matches within 10km'
-		      }
-		    }
-		});
-
-		new Chart(document.getElementById("grafica2"), {
-		    type: 'bar',
-		    data: {
-		      labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
-		      datasets: [
-		        {
-		          label: "Skill Perception",
-		          backgroundColor: "#3e95cd",
-		          data: [80,90,70,40]
-		        }, {
-		          label: "Acquired Skills",
-		          backgroundColor: "#8e5ea2",
-		          data: [68,29,50,80]
-		        }
-		      ]
-		    },
-		    options: {
-		      title: {
-		        display: true,
-		        text: 'Population growth (millions)'
-		      }
-		    }
-		});
+        new Chart(document.getElementById("grafica2"), {
+            type: 'bar',
+            data: {
+                labels: ["Front-end", "Back-end", "Database Admin", "DevOps"],
+                datasets: [{
+                    label: "Skill Perception",
+                    backgroundColor: "#3e95cd",
+                    data: [80, 90, 70, 40]
+                }, {
+                    label: "Acquired Skills",
+                    backgroundColor: "#8e5ea2",
+                    data: [68, 29, 50, 80]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Population growth (millions)'
+                }
+            }
+        });
     </script>
+    <script>
+        $('.responsive').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    
+    <br><br>
+    <div class="full">
+        <h2>Front-end developer with next skills:</h2>
+        <br> Ruby
+        <br> React
+    </div>
+    <div class="responsive">
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Peter Welt
+                <br> 100%
+            </div>
+            <sub class="card-distance">
+                3.2 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Robie Williams
+                <br> 90%
+            </div>
+            <sub class="card-distance">
+                1.7 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Bruce Wayne
+                <br> 85%
+            </div>
+            <sub class="card-distance">
+                6.2 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Robert De Niro
+                <br> 70%
+            </div>
+            <sub class="card-distance">
+                0.5 KM
+            </sub>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="full">
+        <h2>Back-end developer with the next skills:</h2>
+        <br>Node.js
+        <br>Django
+    </div>
+    <div class="responsive">
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Roger Waters
+                <br> 100%
+            </div>
+            <sub class="card-distance">
+                2.1 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Karla Morrison
+                <br> 78%
+            </div>
+            <sub class="card-distance">
+                1.7 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Brock Roman
+                <br> 71%
+            </div>
+            <sub class="card-distance">
+                6.2 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Jack Wilson
+                <br> 68%
+            </div>
+            <sub class="card-distance">
+                0.5 KM
+            </sub>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="full">
+        <h2>Babbysitter with the next skills:</h2>
+        <br>Cleaning
+        <br>Friendly
+    </div>
+    <div class="responsive">
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Jina Dickenson
+                <br> 100%
+            </div>
+            <sub class="card-distance">
+                2.1 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Karla Morrison
+                <br> 82%
+            </div>
+            <sub class="card-distance">
+                5 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Miranda Bell
+                <br> 78%
+            </div>
+            <sub class="card-distance">
+                4.2 KM
+            </sub>
+        </div>
+        <div class="card">
+            <img src="/assets/images/user.png" class="icons" alt="user photo">
+            <div class="card-content">
+                <br> Josh Peck
+                <br> 51%
+            </div>
+            <sub class="card-distance">
+                0.2 KM
+            </sub>
+        </div>
+    </div>
 </div>
